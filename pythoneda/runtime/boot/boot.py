@@ -1,6 +1,6 @@
 # vim: set fileencoding=utf-8
 """
-pythoneda/shared/runtime/events/lifecycle/boot.py
+pythoneda/runtime/boot/boot.py
 
 This script defines the Boot class.
 
@@ -47,7 +47,7 @@ class Boot(EventListener):
         """
         Retrieves the singleton instance.
         :return: Such instance.
-        :rtype: pythoneda.artifact.git.GitArtifact
+        :rtype: pythoneda.runtime.boot.Boot
         """
         if cls._singleton is None:
             cls._singleton = cls.initialize()
