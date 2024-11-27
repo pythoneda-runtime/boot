@@ -66,6 +66,7 @@ class Boot(EventListener):
         :rtype: pythoneda.runtime.events.lifecycle.Booted
         """
         print("TODO!!!!")
+        artifact = ArtifactRepository.instance().find_by_url(event.url)
 
 
 # vim: syntax=python ts=4 sw=4 sts=4 tw=79 sr et
